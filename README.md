@@ -8,6 +8,7 @@
 ![React JS-CSS](https://img.shields.io/badge/CSS-React%20JS-8A2BE2)
 [![Responsive Design](https://img.shields.io/badge/Responsive-Design-blue)](https://en.wikipedia.org/wiki/Responsive_web_design)
 [![Efficient Coding](https://img.shields.io/badge/Efficient-Coding-success)](https://en.wikipedia.org/wiki/Computer_programming)
+[![Local Storage](https://img.shields.io/badge/Local-DataStorage-Storage)](https://en.wikipedia.org/wiki/Computer_programming)
 
 
 
@@ -17,6 +18,7 @@
 - **Efficient Coding:** 💻 The application is built with efficient coding practices, ensuring performance optimization and maintainability.
 - **Dynamic Content:** 🖼️ Each section of the landing page includes engaging content and high-quality images relevant to the website's offerings.
 - **React Router:** ⚛️ React Router technology is utilized for seamless navigation between different sections of the landing page.
+- **Local Data Storage:** 💾 Store page information locally for seamless return visits.
 -  **Navigation:**: 🚶‍♂️ Experience a new way of navigation that goes beyond traditional navigation bars. Our landing page offers a unique, sleek, and innovative method for users to navigate through different sections. Whether it's using arrow keys or simply scrolling down, our dynamic interface provides an engaging and intuitive browsing experience.
 
 
@@ -57,3 +59,7 @@
 #### Conclusion
 <p>The Landing Page React App offers an innovative and user-friendly approach to presenting information and engaging visitors on your website. With its dynamic features, responsive design, and efficient coding, it serves as an effective entry point for showcasing your brand and offerings to potential customers.</p>
 <p>Feel free to reach out for collaboration or to share your ideas. Let's make tech magic! 🚀✨</p>
+
+## Video Documentation
+https://github.com/yarasfand/vertical-carousel-landing/assets/133318363/8c133a3c-73ff-4905-b9f9-38b1ac74622b
+
