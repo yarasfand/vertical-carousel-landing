@@ -2,11 +2,11 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Link, Element, scroller } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
-import cmpny1 from "../LandingPageAssets/cmpny1.jpg";
-import cmpny2 from "../LandingPageAssets/cmpny2.jpg";
-import cmpny3 from "../LandingPageAssets/cmpny3.jpg";
-import cmpny4 from "../LandingPageAssets/cmpny4.jpg";
-import cmpny5 from "../LandingPageAssets/cmpny5.jpg";
+import companyHome from "../LandingPageAssets/home.jpg";
+import companyServices from "../LandingPageAssets/services.jpg";
+import companyProducts from "../LandingPageAssets/products.jpg";
+import companyAboutUs from "../LandingPageAssets/aboutus.jpg";
+import companyContactUs from "../LandingPageAssets/contactUs.jpg";
 import "./LandingPage.css";
 
 function LandingPage() {
@@ -14,6 +14,7 @@ function LandingPage() {
   const [slideNo, setSlideNo] = useState(initialSlideNo);
   const [isActive, setIsActive] = useState(true);
 
+  
   function defSlideNo(noFromPoint) {
     setSlideNo(noFromPoint);
   }
@@ -36,7 +37,7 @@ function LandingPage() {
         if (newSlide <= 4) {
           scroller.scrollTo(`section${newSlide + 1}`, {
             smooth: true,
-            duration: 100,
+            duration: 500,
           });
           return newSlide;
         }
@@ -49,7 +50,7 @@ function LandingPage() {
         if (newSlide >= 0) {
           scroller.scrollTo(`section${newSlide + 1}`, {
             smooth: true,
-            duration: 100,
+            duration: 500,
           });
           return newSlide;
         }
@@ -69,7 +70,7 @@ function LandingPage() {
           if (newSlide <= 4) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 250,
+              duration: 500,
             });
             return newSlide;
           }
@@ -82,7 +83,7 @@ function LandingPage() {
           if (newSlide >= 0) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 250,
+              duration: 500,
             });
             return newSlide;
           }
@@ -108,7 +109,7 @@ function LandingPage() {
           if (newSlide >= 0) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 200,
+              duration: 400,
             });
             return newSlide;
           }
@@ -121,7 +122,7 @@ function LandingPage() {
           if (newSlide <= 4) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 200,
+              duration: 400,
             });
             return newSlide;
           }
@@ -156,7 +157,7 @@ function LandingPage() {
             setSlideNo(i);
             scroller.scrollTo(`section${i + 1}`, {
               smooth: true,
-              duration: 300,
+              duration: 400,
             });
           }}
         ></span>
@@ -178,7 +179,7 @@ function LandingPage() {
   return (
     <div {...handlers} onWheel={handleWheel}>
       <div>
-        <h2 className="landingPageHeading">Pioneer Time Systems</h2>
+        {/* <h2 className="landingPageHeading">Fixed Company Name Can be Written Here</h2>  */}
         <nav className="itsnav">
           <ul>
             <li>
@@ -248,14 +249,16 @@ function LandingPage() {
         <Element name="section1" className="element">
           <div className="landingImageDiv">
             <RouterLink to="home">
-              <img src={cmpny1} alt="cmpny 1" className="landingImage" />
+              <img src={companyHome} alt="companyHome" className="landingImage" />
               <p
                 className={`landingPageless400 ${
                   slideNo === 0 ? "active" : ""
                 }`}
               >
                 Home
+                
               </p>
+              
             </RouterLink>
           </div>
         </Element>
@@ -263,7 +266,7 @@ function LandingPage() {
         <Element name="section2" className="element">
           <div className="landingImageDiv">
             <RouterLink to="services">
-              <img src={cmpny2} alt="cmpny 2" className="landingImage" />
+              <img src={companyServices} alt="companyServices" className="landingImage" />
               <p
                 className={`landingPageless400 ${
                   slideNo === 1 ? "active" : ""
@@ -278,7 +281,7 @@ function LandingPage() {
         <Element name="section3" className="element">
           <div className="landingImageDiv">
             <RouterLink to="products">
-              <img src={cmpny5} alt="cmpny 3" className="landingImage" />
+              <img src={companyProducts} alt="companyProducts" className="landingImage" />
               <p
                 className={`landingPageless400 ${
                   slideNo === 2 ? "active" : ""
@@ -293,7 +296,7 @@ function LandingPage() {
         <Element name="section4" className="element">
           <div className="landingImageDiv">
             <RouterLink to="contact-us">
-              <img src={cmpny3} alt="cmpny 4" className="landingImage" />
+              <img src={companyContactUs} alt="companyContactUs" className="landingImage" />
               <p
                 className={`landingPageless400 ${
                   slideNo === 3 ? "active" : ""
@@ -308,7 +311,7 @@ function LandingPage() {
         <Element name="section5" className="element">
           <div className="landingImageDiv">
             <RouterLink to="about-us">
-              <img src={cmpny4} alt="cmpny 5" className="landingImage" />
+              <img src={companyAboutUs} alt="companyAboutUs" className="landingImage" />
               <p
                 className={`landingPageless400 ${
                   slideNo === 4 ? "active" : ""
