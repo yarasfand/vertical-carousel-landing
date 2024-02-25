@@ -29,8 +29,6 @@ function LandingPage() {
   }, [slideNo]);
 
   const handleSwipe = (direction) => {
-
-
     if (direction === "Up" && slideNo < 4) {
       // Swipe up
       setSlideNo((prevSlide) => {
@@ -58,7 +56,6 @@ function LandingPage() {
         return prevSlide;
       });
     }
-
   };
 
   const handleWheel = (event) => {
@@ -191,8 +188,7 @@ function LandingPage() {
                 smooth={true}
                 duration={300}
                 onClick={() => defSlideNo(0)}
-                className={`landingPageTitle ${slideNo === 0 ? "active" : ""
-                  }`}
+                className={`landingPageTitle ${slideNo === 0 ? "active" : ""}`}
               >
                 Home
               </Link>
@@ -204,8 +200,7 @@ function LandingPage() {
                 smooth={true}
                 duration={300}
                 onClick={() => defSlideNo(1)}
-                className={`landingPageTitle ${slideNo === 1 ? "active" : ""
-                  }`}
+                className={`landingPageTitle ${slideNo === 1 ? "active" : ""}`}
               >
                 Services
               </Link>
@@ -217,8 +212,7 @@ function LandingPage() {
                 smooth={true}
                 duration={300}
                 onClick={() => defSlideNo(2)}
-                className={`landingPageTitle ${slideNo === 2 ? "active" : ""
-                  }`}
+                className={`landingPageTitle ${slideNo === 2 ? "active" : ""}`}
               >
                 Products
               </Link>
@@ -230,8 +224,7 @@ function LandingPage() {
                 smooth={true}
                 duration={300}
                 onClick={() => defSlideNo(3)}
-                className={`landingPageTitle ${slideNo === 3 ? "active" : ""
-                  }`}
+                className={`landingPageTitle ${slideNo === 3 ? "active" : ""}`}
               >
                 Contact Us
               </Link>
@@ -243,8 +236,7 @@ function LandingPage() {
                 smooth={true}
                 duration={300}
                 onClick={() => defSlideNo(4)}
-                className={`landingPageTitle ${slideNo === 4 ? "active" : ""
-                  }`}
+                className={`landingPageTitle ${slideNo === 4 ? "active" : ""}`}
               >
                 About Us
               </Link>
@@ -255,11 +247,12 @@ function LandingPage() {
         <div className="dot-container">{renderDots()}</div>
         <Element name="section1" className="element">
           <div className="landingImageDiv">
-            <RouterLink to="/home">
+            <RouterLink to="home">
               <img src={cmpny1} alt="cmpny 1" className="landingImage" />
               <p
-                className={`landingPageless400 ${slideNo === 0 ? "active" : ""
-                  }`}
+                className={`landingPageless400 ${
+                  slideNo === 0 ? "active" : ""
+                }`}
               >
                 Home
               </p>
@@ -269,10 +262,12 @@ function LandingPage() {
 
         <Element name="section2" className="element">
           <div className="landingImageDiv">
-            <RouterLink to="/services">
-              <img src={cmpny2} alt="cmpny 3" className="landingImage" />
+            <RouterLink to="services">
+              <img src={cmpny2} alt="cmpny 2" className="landingImage" />
               <p
-                className={`landingPageless400 ${slideNo === 1 ? "active" : ""}`}
+                className={`landingPageless400 ${
+                  slideNo === 1 ? "active" : ""
+                }`}
               >
                 Services
               </p>
@@ -282,22 +277,27 @@ function LandingPage() {
 
         <Element name="section3" className="element">
           <div className="landingImageDiv">
-            <img src={cmpny5} alt="cmpny 3" className="landingImage" />
-            <p
-              className={`landingPageless400 ${slideNo === 2 ? "active" : ""}`}
-            >
-              Products
-            </p>
+            <RouterLink to="products">
+              <img src={cmpny5} alt="cmpny 3" className="landingImage" />
+              <p
+                className={`landingPageless400 ${
+                  slideNo === 2 ? "active" : ""
+                }`}
+              >
+                Products
+              </p>
+            </RouterLink>
           </div>
         </Element>
 
         <Element name="section4" className="element">
           <div className="landingImageDiv">
-            <RouterLink to="/about-us">
+            <RouterLink to="contact-us">
               <img src={cmpny3} alt="cmpny 4" className="landingImage" />
               <p
-                className={`landingPageless400 ${slideNo === 3 ? "active" : ""
-                  }`}
+                className={`landingPageless400 ${
+                  slideNo === 3 ? "active" : ""
+                }`}
               >
                 About Us
               </p>
@@ -307,11 +307,12 @@ function LandingPage() {
 
         <Element name="section5" className="element">
           <div className="landingImageDiv">
-            <RouterLink to="/contact-us">
+            <RouterLink to="about-us">
               <img src={cmpny4} alt="cmpny 5" className="landingImage" />
               <p
-                className={`landingPageless400 ${slideNo === 4 ? "active" : ""
-                  }`}
+                className={`landingPageless400 ${
+                  slideNo === 4 ? "active" : ""
+                }`}
               >
                 Contact Us
               </p>
